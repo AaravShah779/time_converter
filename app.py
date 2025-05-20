@@ -4,18 +4,6 @@ import pytz
 
 st.set_page_config(page_title="EST ↔ IST Visual Time Converter", layout="centered")
 
-# Theme switch
-theme = st.radio("Choose Theme", ["Light", "Dark"], horizontal=True)
-
-if theme == "Dark":
-    bg_color = "#1e1e1e"
-    text_color = "white"
-    thumb_color = "#007acc"
-else:
-    bg_color = "#ffffff"
-    text_color = "#000000"
-    thumb_color = "#007acc"
-
 # Inject CSS + JS styled slider
 st.markdown(f"""
 <style>
